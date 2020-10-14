@@ -21,7 +21,7 @@ Portfolio websites are a great way to show off your work to friends, family, and
 
 ### Task 1: Set Up The Project With Git
 
-Follow these steps to set up and work on your project:
+Follow these steps to set up and work on your project:=
 
 - [ ] Create a forked copy of this project.
 - [ ] Clone your OWN version of the repository (Not Lambda's by mistake!).

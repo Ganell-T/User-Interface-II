@@ -1,4 +1,4 @@
-cdhtml, body, div, span, applet, object, iframe,  
+html, body, div, span, applet, object, iframe,  
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,  
 a, abbr, acronym, address, big, cite, code,  
 del, dfn, em, img, ins, kbd, q, s, samp,  
@@ -69,6 +69,12 @@ text-align: left;
   width: 90%;
  }
 
+ img.main {
+    display: block;
+    margin: 0 auto;
+    height: 100%;
+}
+
 
 h2 {
 padding-top: 5%;
@@ -90,7 +96,7 @@ font-size: 5rem;
 
 .info p {
   font-size: 1.6rem;
-  font-align: justify;
+  text-align: justify;
 }
 
 .conttwo > div {
@@ -114,6 +120,7 @@ font-size: 5rem;
   height: 100%;
   width: 100%;
   align-items: center;
+  justify-content: space-around;
 }
 
 .conttwo div {
@@ -126,6 +133,7 @@ font-size: 5rem;
   height: 100%;
   width: 100%;
   align-items: center;
+  justify-content: space-around;
 }
 
 .contthree div {
@@ -134,10 +142,11 @@ font-size: 5rem;
 
 
 div.gallery {
-  margin: 5px; 10px;
+  margin: 5px 10px;
   border: 1px solid #ccc;
   /*float: left;*/
   width: 400px;
+  
 }
 
 div.gallery:hover {
@@ -158,8 +167,8 @@ div.desc {
 footer {
 background-color: lightgray;
 width: 100%;
-padding: 2%;
-align-items: center;
+padding: 1%;
+justify-content: space-around;
 }
 
 footer h3  {
@@ -172,24 +181,22 @@ text-align: center;
 
 footer a {
   font-size: 1.2rem;
-  margin: 0 0;
   border: 4px solid black;
   padding: 1% 3%;
   color: black;
   text-decoration: none;
-  margin-bottom: 20px;
   background: white;
-  text-align: center;
-  display: inline-block;
-  margin: 0 auto;
+  text-align: center; 
+  display: inline-block; 
+  margin: 5px auto;
 }
 
+  
 .abtpage p{
-  font-size: 1.2rem;
+  font-size: 2rem;
   padding: 1% 3%;
   text-decoration: none;
 }
-
 
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
@@ -226,8 +233,170 @@ input[type=submit]:hover {
   margin:  10% 30% 10%;
 }
 
-/* footer a {
-    display: flex;
-    justify-content: center;
+/* --- responsive design max width 500px---*/
+
+@media(max-width:500px) {
+/** header changes */
+    h1 {
+      font-size: 4rem;
+      text-align:center;
+    }
+
+    .head header nav a {
+      display: flex;
+      flex-direction: column;
+      width: 20%;
+      margin: 5px auto;
+      text-align: center;
+    }
+
+    .head {
+      background-color: white;
+    }
+
+/** container one changes */
+
+    .contone div {
+      margin: 0 auto;
+      align-items: center;
+    }
+
+    .contone {
+      flex-direction: column;
+    }
+
+    h2 {
+      font-size: 3rem;
+      text-align: center;
+    }
+
+    .info a {
+      margin: 0 auto 5px;
+      border: 4px solid black;
+      padding: 2% auto;
+      display: block;
+      text-align: center;
+      width: 30% 
+    }
+
+    /*-- gallery changes -- */
+
+    .conttwo > div {
+    text-align: center;
     align-items: center;
-}*/
+    }
+
+    .conttwo {
+      display: flex;
+      height: 100%;
+      width: 100%;
+      align-items: center;
+      justify-content: space-around;
+    }
+
+    .conttwo div {
+      width: 40%;
+    } 
+
+    .contthree > div {
+      text-align: center;
+      align-items: center;
+    }
+
+    .contthree {
+      display: flex;
+      height: 100%;
+      width: 100%;
+      align-items: center;
+      justify-content: space-around;
+    }
+
+    .contthree div {
+      width: 40%;
+    } 
+    /* ------ no footer changes---*/
+}
+
+    /* --- responsive design max width 800px---*/
+
+@media(max-width: 800px) {
+/** header changes */
+    h1 {
+      font-size: 5rem;
+      text-align:center;
+    }
+
+    .head header nav a {
+      display: flex;
+      flex-direction: column;
+      width: 20%;
+      margin: 5px auto;
+      text-align: center;
+    }
+
+    .head {
+      background-color: white;
+    }
+
+/* * container one changes */
+
+    .contone div {
+      margin: 0 auto;
+      align-items: center;
+    }
+
+    .contone {
+      flex-direction: column;
+    }
+
+    h2 {
+      font-size: 3rem;
+      text-align: center;
+    }
+
+    .info a {
+      margin: 0 auto 5px;
+      border: 4px solid black;
+      padding: 2% auto;
+      display: block;
+      text-align: center;
+      width: 30% 
+    }
+
+    /*-- gallery changes -- */
+
+     .conttwo > div {
+    text-align: center;
+    align-items: center;
+    }
+
+    .conttwo {
+      display: flex;
+      height: 100%;
+      width: 100%;
+      align-items: center;
+      justify-content: space-around;
+    }
+
+    .conttwo div {
+      width: 40%;
+    } 
+
+    .contthree > div {
+      text-align: center;
+      align-items: center;
+    }
+
+    .contthree {
+      display: flex;
+      height: 100%;
+      width: 100%;
+      align-items: center;
+      justify-content: space-around;
+    }
+
+    .contthree div {
+      width: 40%; 
+    } 
+    /* ------ no footer changes---*/
+}
