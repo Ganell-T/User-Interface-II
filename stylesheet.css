@@ -72,8 +72,6 @@ text-align: left;
 
  img.main {
     display: block;
-    /* margin-left: auto;
-    margin-right: auto; */
     margin: 0 auto;
     height: 100%;
 }
@@ -99,7 +97,7 @@ font-size: 5rem;
 
 .info p {
   font-size: 1.6rem;
-  font-align: justify;
+  text-align: justify;
 }
 
 .conttwo > div {
@@ -236,7 +234,7 @@ input[type=submit]:hover {
   margin:  10% 30% 10%;
 }
 
-/* --- responsive design mas width 500px---*/
+/* --- responsive design max width 500px---*/
 
 @media(max-width:500px) {
 /** header changes */
@@ -259,31 +257,25 @@ input[type=submit]:hover {
     .contone div {
       margin: 0 auto;
       align-items: center;
-      /* flex-direction: row; */
       border: 1px solid black;
-   }
+    }
     .contone {
       flex-direction: column;
-      /* border: 1px solid black; */
     }
-    /* .main {
-    margin: 0 auto;
-    display: block;
-    width: 100%;
-    }
-    .info {
-    position: relative;
-    display: block;
-    width: 100%;
-    } */
-
-     
     h2 {
-      text-align: center:
+      font-size: 3rem;
+      text-align: center;
     }
-    .info a {
-      box-align: center;
-    }
+
+.info a {
+  margin: 0 auto 5px;
+  border: 4px solid black;
+  padding: 2% auto;
+  display: block;
+  text-align: center;
+  width: 30% 
+ }
+
       
 
   
