@@ -226,3 +226,38 @@ input[type=submit]:hover {
   padding: 20px;
   margin:  10% 30% 10%;
 }
+
+/* --- responsive design mas width 500px---*/
+
+@media(max-width:500px) {
+/** header changes */
+    h1 {
+      font-size: 4rem;
+      text-align:center;
+    }
+    .head header nav a {
+      display: flex;
+      flex-direction: column;
+      width: 20%;
+      margin: 5px auto;
+      text-align: center;
+    }
+    .head {
+      background-color: white;
+    }
+/** container one changes */
+    .contone {
+      flex-direction: column;
+    }
+    
+      
+
+  
+
+}
+
+
+
+
+
+/*-- --- ------ ---------------- */
