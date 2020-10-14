@@ -314,4 +314,89 @@ input[type=submit]:hover {
     .contthree div {
       width: 40%;
     } 
-    /* --------footer changes---*/
+    /* ------ no footer changes---*/
+}
+
+    /* --- responsive design max width 800px---*/
+
+@media(max-width: 800px) {
+/** header changes */
+    h1 {
+      font-size: 5rem;
+      text-align:center;
+    }
+
+    .head header nav a {
+      display: flex;
+      flex-direction: column;
+      width: 20%;
+      margin: 5px auto;
+      text-align: center;
+    }
+
+    .head {
+      background-color: white;
+    }
+
+/* * container one changes */
+
+    .contone div {
+      margin: 0 auto;
+      align-items: center;
+    }
+
+    .contone {
+      flex-direction: column;
+    }
+
+    h2 {
+      font-size: 3rem;
+      text-align: center;
+    }
+
+    .info a {
+      margin: 0 auto 5px;
+      border: 4px solid black;
+      padding: 2% auto;
+      display: block;
+      text-align: center;
+      width: 30% 
+    }
+
+    /*-- gallery changes -- */
+
+     .conttwo > div {
+    text-align: center;
+    align-items: center;
+    }
+
+    .conttwo {
+      display: flex;
+      height: 100%;
+      width: 100%;
+      align-items: center;
+      justify-content: space-around;
+    }
+
+    .conttwo div {
+      width: 40%;
+    } 
+
+    .contthree > div {
+      text-align: center;
+      align-items: center;
+    }
+
+    .contthree {
+      display: flex;
+      height: 100%;
+      width: 100%;
+      align-items: center;
+      justify-content: space-around;
+    }
+
+    .contthree div {
+      width: 40%; 
+    } 
+    /* ------ no footer changes---*/
+}
